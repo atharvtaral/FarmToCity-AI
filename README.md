@@ -3,7 +3,7 @@
 A Python implementation of the OnionGuard pipeline:
 
 1. **Smartphone AI Scan** — analyze a photo of onions
-2. **AI Quality Scoring** — Gemini or OpenAI vision model grades quality (300-850 score, freshness %, defects, size grade)
+2. **AI Quality Scoring** — Gemini, OpenAI (`gpt-4o`), or custom models (e.g., `gpt-6-astra`) grade quality (300-850 score, freshness %, defects, size grade)
 3. **AI Logistics Advisory** — transit spoilage risk, optimal buyer radius, route recommendation
 4. **Urban Wholesale Marketplace** — mock buyer match + offer price
 
@@ -16,13 +16,9 @@ The app picks a provider with simple `if / elif / else` logic in
 if GEMINI_API_KEY is set:
     use Gemini
 elif OPENAI_API_KEY is set:
-    use OpenAI
+    use OpenAI (gpt-4o / gpt-6-astra)
 else:
     run in DEMO mode (sample data, no API calls)
-```
-
-This means you only need **one** of the two keys — whichever is present
-gets used automatically, with Gemini preferred if both exist.
 
 ## Setup
 
