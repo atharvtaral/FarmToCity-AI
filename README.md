@@ -1,6 +1,6 @@
 # Farm To City AI
 
-A Python implementation of the OnionGuard pipeline:
+A Python implementation of the Farm to city pipeline:
 
 1. **Smartphone AI Scan** — analyze a photo of onions
 2. **AI Quality Scoring** — Gemini, OpenAI (`gpt-4o`), or custom models (e.g., `gpt-6-astra`) grade quality (300-850 score, freshness %, defects, size grade)
