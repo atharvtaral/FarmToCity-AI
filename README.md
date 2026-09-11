@@ -19,8 +19,8 @@ elif OPENAI_API_KEY is set:
     use OpenAI (gpt-4o / gpt-6-astra)
 else:
     run in DEMO mode (sample data, no API calls)
-
-## Setup
+```
+# Setup
 
 ```bash
 pip install -r requirements.txt
